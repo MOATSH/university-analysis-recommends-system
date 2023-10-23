@@ -1,0 +1,169 @@
+ body {
+    font-family: Arial, sans-serif;
+  }
+
+/* 导航栏样式 */
+ul.navbar {
+  list-style-type: none;
+  margin: 5px 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #251424;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 5px black;
+}
+
+ul.navbar li {
+  float: left;
+}
+
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {
+  background-color: #111;
+}
+
+/* 右侧个人信息按钮样式 */
+ul.navbar li.user {
+  float: right;
+}
+
+ul.navbar li.user a {
+  background-color: #cf3131;
+  transition: background-color 0.3s ease; /* 添加过渡效果 */
+  }
+  
+  ul.navbar li.user a:hover {
+  background-color: #c7692a;
+  }
+
+
+
+  /* 推荐页 */
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .title {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    width: 600px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color :rgb(0,0,0,0.5);
+    border-radius: 5px;
+  }
+
+  .form select,
+  .form input {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+  }
+
+  .form select {
+    width: 150px;
+  }
+
+  .form input {
+    width: 100px;
+  }
+
+  .form button {
+    padding: 5px 10px;
+    background-color: #ec6c1c;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .form button:hover {
+    transform: scale(1.2);
+    background-color: #d347da;
+  }
+
+  /* 学校名片样式 */
+  .schoolList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .schoolCard {
+    width: 600px;
+    height: 100px;
+    padding: 0px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+    margin: 10px auto;
+    box-shadow: 1px 1px 5px black;
+  }
+
+  .schoolLink{
+    height: 100px;
+    display: flex;
+    color: #000;
+    text-decoration: none;
+    justify-content: space-evenly;
+  }
+  .schoolCard :hover {
+    transition: background-color 1s ease;
+    background-color: #ffefe4;
+  }
+
+  /* .schoolCard:hover {
+    background-color: #f5f5f5;
+  } */
+
+  .schoolLogo {
+    justify-content: center;
+    margin: auto 5px;
+  }
+
+  .schoolLogo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .schoolName {
+    line-height: 100px;
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .schoolInfo ,
+  .probability{
+    line-height: 100px;
+    font-size: 16px;
+  }
+
+
+  .schoolType {
+    font-style: italic;
+  }

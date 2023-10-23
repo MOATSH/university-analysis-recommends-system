@@ -1,0 +1,126 @@
+.choose{
+    height: auto;
+    text-align: center;
+}
+
+.input-container {
+    margin-top: 1%;
+    position: relative;
+    display: inline-block;
+  }
+
+  .input-container input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .input-container ul {
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    width: 300px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+  }
+
+  .input-container li {
+    padding: 5px;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .input-container li:hover {
+    background-color: #e1e1e1;
+}
+
+.choose button {
+  height: 100%;
+  padding: 5px 10px;
+  background-color: #ffc6a3;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.choose button:hover {
+  transform: scale(1.2);
+  background-color: #ffb9b9;
+}
+
+.univInfoDiv {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 800px;
+  height: 200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.univInfo{
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  width: auto;
+  height: 100px;
+  background-color: #fff;
+  line-height: 100px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0px rgba(76, 67, 67, 0.5);
+}
+
+.logo{
+  margin: auto 5px;
+  width: 90px;
+  height: 90px;
+}
+
+.name {
+  line-height: 100px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+
+.province {
+  font-size: 12px;
+  color: black;
+}
+
+.univInfo:hover {
+  text-decoration: none;
+}
+
+/* 分析数据图展示板 */
+#chart{
+  width: 80%; 
+  height: 500px;
+  margin: 10px auto;
+  padding: 20px 40px;
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 20px;
+}
+
+#chart2{
+  width: 80%; 
+  height: 150px;
+  margin: 10px auto;
+  padding: 20px 40px;
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 20px;
+}
+
+#chart3{
+  width: 80%; 
+  height: 200px;
+  margin: 10px auto;
+  padding: 20px 40px;
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 20px;
+}

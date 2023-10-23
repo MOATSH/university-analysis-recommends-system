@@ -1,0 +1,316 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* 导航栏样式 */
+ul.navbar {
+  list-style-type: none;
+  margin: 5px 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #251424;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 5px black;
+}
+
+ul.navbar li {
+  float: left;
+}
+
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {
+  background-color: #111;
+}
+
+/* 右侧个人信息按钮样式 */
+ul.navbar li.user {
+  float: right;
+}
+
+ul.navbar li.user a {
+  background-color: #cf3131;
+  transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+ul.navbar li.user a:hover {
+  background-color: #c7692a;
+}
+
+
+
+/* --- 详情页样式--- */
+.info {
+    display: flex;
+    height:100%;
+    width: 100%;
+    position: relative;
+    flex-direction: row;
+  }
+  
+  
+  .infoLeft {
+    background-color: #f1f1f1;
+    width: 200px;
+    min-width: 15%;
+    padding: 20px;
+    top: 0;
+    left: 0;
+  }
+  
+    .infoLeft h2 {
+      background-color:#dbefd3;
+      border-radius: 5px;
+      padding-left: 10px ;
+    }
+  
+    .infoLeft p {
+      border-radius: 5px;
+      padding-left: 10px ;
+    }
+  
+  .infoMiddle {
+    background-color: #ebe3d2c9;
+    height: 100%;
+    width: 100%;
+    min-width: 400px;
+    min-height: 1000px;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  /* 内容头部 */
+  .infoHeader {
+    width:100%; 
+    max-width: 100%;
+    min-height:204px;
+    max-height: fit-content;
+    margin: 0;
+    float:left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  
+  }
+  
+  .collegeIcon {
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+  }
+  
+  .collegeNameText {
+    max-width: 180px;
+    min-width: 128px;
+    width: 25%;
+    height: 180px;
+    flex-grow: 2;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f4b7bfb7;
+  }
+  
+    .collegeNameText h1 {
+      margin: 13%;
+    }
+  
+    .collegeNameText p {
+      font-size: 24px;
+      margin: auto;
+      color:  #704141;
+    }
+  
+  .infoCharts{
+    min-width:fit-content;
+    max-width: 100%;
+    min-height:180px;
+    border-radius: 15px;
+    margin: 10px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    background-color: #f1efdf;
+  }
+  
+    .infoCharts p {
+      display:inline;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 24px;
+    }
+  
+  /* 内容正文 */
+  .infoBody{
+    min-height: 100%;
+    height:auto;
+    width:90%;
+    max-width: 1115px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    border-radius: 15px;
+    background-color: #ebe3d2c9;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cec1b7;
+  }
+  
+  .infoTitle{
+    height: 60px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #cccccc;
+  }
+  
+    .infoTitle a {
+      margin-left: 20px;
+      
+      font-weight:bold;
+      font-size: 24px;
+      line-height: 60px;
+    }
+
+    .infoTitle select{
+        float:right;
+        margin-top: 20px;
+        margin-right: 20px;
+        border-radius: 5px;
+        background-color:#f7f7f2;
+    }
+  
+    /* 院校简介 */
+  .infoBasicText{
+    height: fit-content;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #dbefd3;
+  }
+  
+    .infoBasicText p {
+      margin-left: 20px;
+      margin-right: 30px;
+      text-indent: 32px;
+    }
+  
+    /* 分数版 */
+  .infoScoreTable{
+    height: fit-content;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #dbefd3;
+    text-align: center;
+  }
+  
+    .infoScoreTable h2 {
+      margin-left: 20px;
+    }
+  
+    /* 表格样式 */
+    .infoScoreTable table{
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      table-layout: fixed;
+      width: 100%;
+      
+    }
+  
+    .infoScoreTable th {
+      background-color: #dbefd3;
+      border-radius: 15px;
+    }
+  
+    .infoScoreTable th, td {
+      padding: 5px;
+    }
+  
+    .infoScoreTable tbody tr:nth-child(odd){
+      background-color: #c8e0e2;  /* ▤奇数行颜色 */
+    }
+  
+    .infoScoreTable tbody tr:last-child td:first-child{
+      border-bottom-left-radius: 15px; /* ↙圆角 */
+    }
+  
+    .infoScoreTable tbody tr:last-child td:last-child{
+      border-bottom-right-radius: 15px; /* ↘圆角 */
+    }
+  
+  
+  
+  /* 毕业生质量 */
+  .infoGraduate {
+    height: 100%;
+    vertical-align: middle;
+    line-height: 40px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 15px;
+    background-color: #f1efdf;
+  }
+  
+    .infoGraduate p {
+      display:inline;
+      margin-left: 20px;
+      font-weight:normal;
+      font-size: 24px;
+    }
+  
+    .infoGraduate a {
+      margin-left: 20px;
+      font-family:"Bahnschrift", "Times New Roman", serif;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+.addToFavor {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/*button*/
+.addToFavor {
+  position: absolute;
+  top:45%;
+  right: 20px;
+  z-index: 9999;
+}
+
+.addToFavor button {
+  width: 200px;
+  height: 50px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addToFavor button:hover {
+  background-color: #45a049;
+}
+
+.addToFavor button:focus {
+  outline: none;
+}

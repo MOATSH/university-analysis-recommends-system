@@ -1,0 +1,81 @@
+/* 用户管理主界面 */
+/* administrator.jsp */
+.centerContainer{
+    display: flex;
+    width: 800px;
+    height: 550px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+}
+
+.left{
+    height: 300px;
+    width:340px;
+    background-color: rgb(255, 224, 183);
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px 0px rgba(76, 67, 67, 0.5);
+}
+
+.right{
+    height: 300px;
+    width:340px;
+    background-color: rgb(255, 224, 183);
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px 0px rgba(76, 67, 67, 0.5);
+}
+
+.centerContainer > div{
+    text-decoration: none;
+    text-align: center;
+}
+
+/* 用户管理界面 */
+        .userList {
+          width: 300px;
+          margin: 0 auto;
+          padding: 10px;
+        }
+      
+        .userList ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+      
+        .userList li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px;
+          border: 1px solid #ddd;
+          margin-bottom: 10px;
+        }
+      
+        .userList li .userInfo {
+          display: flex;
+          align-items: center;
+        }
+      
+        .userList li .username,
+        .userList li .password {
+          margin-right: 10px;
+        }
+      
+        .userList li .btn {
+          margin-left: 10px;
+        }
+      
+        /* 弹窗 */
+        .dialog {
+            text-align: center;
+            width: 400px;
+            height: 300px;
+            background-color: #6f2d2d;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
